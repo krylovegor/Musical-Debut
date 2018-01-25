@@ -1,22 +1,15 @@
 ﻿
 <!DOCTYPE HTML>
-<!--
-	Broadcast by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
-		<title>Generic - Broadcast by TEMPLATED</title>
+		<title>Musical-Debut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body class="subpage">
-
-		<!-- Main -->
-			<div id="main">
-				<section class="wrapper ">
+		<section class="wrapper ">
 					<div class="inner">
 		
 						<header class="align-center">
@@ -93,6 +86,7 @@
 										$username = "root";
 										$password = "";
 										$dbname = "site";
+										
 										$genre="%";
 										$genre=$_GET["genre"];
 										// Create connection
@@ -131,9 +125,9 @@
 								
 						<?php
 									$servername = "localhost";
-									$username = "root";
-									$password = "";
-									$dbname = "site";
+										$username = "root";
+										$password = "";
+										$dbname = "site";
 									if ($inst=='Выберите инструмент')
 										{
 											$inst='%';
@@ -147,9 +141,9 @@
 											$genre='%';
 										}
 
-									// Create connection
+								
 									$conn = mysqli_connect($servername, $username, $password, $dbname);
-									// Check connection
+								
 									if (!$conn) {
 										die("Connection failed: " . mysqli_connect_error());
 									}
@@ -157,7 +151,7 @@
 									$result = mysqli_query($conn, $sql);
 
 									if (mysqli_num_rows($result) > 0) {
-										// output data of each row
+							
 										while($row = mysqli_fetch_assoc($result)) {
 										echo 
 										"
@@ -189,23 +183,16 @@
 									mysqli_close($conn);
 							?>
 							</table>
-					</div>
+							<hr>
+							<center><a href=page3.html class="button big alt scrolly">Назад</a>
+								<a href=index.html class="button big alt scrolly">На главную</a><center>
 				</section>
-			<footer>
+		
 		
 				<div class="copyright">
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
-								<center><a href=page3.html class="button big alt scrolly">Назад</a>
-								<a href=index.html class="button big alt scrolly">На главную</a><center>
+					&copy; Egor Krylov. Design: <a href="https://templated.co">TEMPLATED</a>.
 				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		
 
 	</body>
 </html>

@@ -1,21 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Broadcast by TEMPLATED</title>
+		<title>Musical-Debut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script scr="jquery-3.2.1.min.js"></script>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 		<body>
 				<section id="banner">
 					<div class="inner">
 									<?php
-									error_reporting(-1);
-									header('Content-Type: text/html; charset=utf-8');
-									$servername = "localhost";
-									$username = "root";
-									$password = "";
-									$dbname = "site";
+										$servername = "localhost";
+										$username = "root";
+										$password = "";
+										$dbname = "site";
 									$today = date('Y-m-d h-i-s');
 									$FirstName=$_POST["FirstName"];									
 									$LastName=$_POST["LastName"];
@@ -24,9 +22,8 @@
 									$city=$_POST["city"];
 									$genre=$_POST["genre"];
 									$subgenre=$_POST["subgenre"];
-									// Create connection
 									$conn = new mysqli($servername, $username, $password, $dbname);
-									// Check connection
+
 									if ($conn->connect_error) {
 										die("Connection failed: " . $conn->connect_error);
 									}
@@ -50,7 +47,7 @@
 
 				</section>
 				<div class="copyright">
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
+					&copy; Egor Krylov. Design: <a href="https://templated.co">TEMPLATED</a>.
 				</div>
 	</body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>ЭТО МОЙ ПРОЕКТ!!!!</title>
+		<title>Musical-Debut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
 				<section id="banner">
@@ -18,7 +18,7 @@
 
 				</section>
 				<div class="copyright">
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
+					&copy; Egor Krylov. Design: <a href="https://templated.co">TEMPLATED</a>.
 				</div>
 	</body>
 </html>

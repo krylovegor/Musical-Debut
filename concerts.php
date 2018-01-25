@@ -1,22 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Broadcast by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
-		<title>Generic - Broadcast by TEMPLATED</title>
+		<title>Musical-Debut</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
-	<body class="subpage">
-
-		<!-- Main -->
-			<div id="main">
-			
-						
+	<body class="subpage">	
 				<section class="wrapper ">
 					<div class="inner">
 					<header class="align-center">
@@ -27,13 +17,13 @@
 							<option>Выберите город</option>
 							<?php
 										$servername = "localhost";
-										$username = "root";
-										$password = "";
-										$dbname = "site";
-										$city=$_GET["city"];
-										// Create connection
+									$username = "root";
+									$password = "";
+									$dbname = "site";
+										$city=$_GET['city'];
+										
 										$conn = mysqli_connect($servername, $username, $password, $dbname);
-										// Check connection
+										
 										if (!$conn) {
 											die("Connection failed: " . mysqli_connect_error());
 										}
@@ -42,7 +32,7 @@
 										$result = mysqli_query($conn, $sql);
 
 										if (mysqli_num_rows($result) > 0) {
-											// output data of each row
+											
 											while($row = mysqli_fetch_assoc($result)) {
 											echo "<option>".$row['city']."</option>";
 												
@@ -75,9 +65,8 @@
 										$city='%';
 									}
 
-									// Create connection
 									$conn = mysqli_connect($servername, $username, $password, $dbname);
-									// Check connection
+					
 									if (!$conn) {
 										die("Connection failed: " . mysqli_connect_error());
 									}
@@ -85,7 +74,7 @@
 									$result = mysqli_query($conn, $sql);
 
 									if (mysqli_num_rows($result) > 0) {
-										// output data of each row
+									
 										while($row = mysqli_fetch_assoc($result)) {
 										echo 
 										"
@@ -121,17 +110,13 @@
 							</table>
 					</div>
 					<div class="inner">
-					<center><a href=page2.php class="button big alt scrolly">Назад</a>
+					<center>
 							<a href=index.html class="button big alt scrolly">На главную</a><center>
 					</div>
 				</section>
-			<footer>
-		
-				<div class="copyright">
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
-								
+			<div class="copyright">
+					&copy; Egor Krylov. Design: <a href="https://templated.co">TEMPLATED</a>.
 				</div>
-			</footer>
 
 
 	</body>
